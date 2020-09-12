@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am currenlty a graduate student at The University of Texas at Dallas who is a beginner to all things coding. I wanted to create this webpage in order to upload all of my past projects to show my knowledge and abilities in the field of data analytics and some coding. As you can see, the webpage is still pretty bare as it needs more work. Keep checking back to see the progress.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+BA Sociology
+MS Social Data Analytics and Research
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[valeria.salinas8@gmail.com](mailto:valeria.salinas8@gmail.com)
