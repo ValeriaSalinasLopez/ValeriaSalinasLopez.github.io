@@ -8,9 +8,9 @@ I am currenlty a graduate student at The University of Texas at Dallas who is a 
 
 ### More Information
 
-BA Sociology
-MS Social Data Analytics and Research
+* BA Sociology
+* MS Social Data Analytics and Research
 
 ### Contact me
 
-[valeria.salinas8@gmail.com](mailto:valeria.salinas8@gmail.com)
+[vxs170930@utdallas.edu](mailto:vxs170930@utdallas.edu)
