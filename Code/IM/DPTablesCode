@@ -1,0 +1,51 @@
+create table DPstate
+   (state_name		varchar(20), 
+	region			varchar(15), 
+	GDP				numeric(8,0) check (GDP > 0),
+	percwhite		numeric(4,0) check (percwhite >= 0),
+	percpov			numeric(4,0) check (percpov >= 0),
+	partycon		varchar(15),
+	onDR			numeric(3,0),
+	primary key (state_name)
+   );
+   
+create table executed
+   (executed_id	varchar(4),
+	first_name		varchar(20) not null,
+	last_name		varchar(20) not null,
+	race			varchar(30),
+	gender			varchar(7),
+	state_name		varchar(20),
+	region			varchar(15),
+	year			numeric(4,0) check (year > 1701 and year < 2100),
+	primary key (executed_id),
+	foreign key (state_name) references DPstate (state_name)
+		on delete set null
+   );
+
+create table innocent
+   (innocent_id	varchar(4), 
+	first_name		varchar(20) not null,
+	last_name		varchar(20) not null,
+	race			varchar(30),
+	state_name		varchar(20),
+	region			varchar(15),
+	reason			varchar(160),
+	years		  	numeric(2,0) check (years >= 0),
+	primary key (innocent_id),
+	foreign key (state_name) references DPstate (state_name)
+		on delete set null
+   );
+
+create table scheduled
+   (scheduled_id	varchar(5), 
+	first_name		varchar(20) not null, 
+	last_name		varchar(20) not null, 
+	state_name 		varchar(20),
+	region			varchar(15),
+	month			varchar(10),
+	eyear			numeric(4,0) check (eyear > 1701 and eyear <2100),
+	primary key (scheduled_id),
+	foreign key (state_name) references DPstate (state_name)
+		on delete set null
+   );
